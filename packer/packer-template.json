@@ -1,0 +1,21 @@
+{
+    "builders": [
+      {
+        "type": "amazon-ebs",
+        "region": "us-east-1",
+        "source_ami": "ami-0f4c3b0d7b6bd7d0f",  
+        "instance_type": "t2.micro",
+        "ssh_username": "ubuntu",
+        "ami_name": "ubuntu-22-04-apache-{{timestamp}}",
+        "tags": {
+          "Name": "Ubuntu 22.04 with Apache"
+        }
+      }
+    ],
+    "provisioners": [
+      {
+        "type": "ansible",
+        "playbook_file": "ansible/playbook.yml"
+      }
+    ]
+  }
