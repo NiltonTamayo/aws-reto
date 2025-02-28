@@ -33,18 +33,7 @@ Antes de ejecutar este proyecto, asegúrate de tener instalado:
 Nota: También se necesita una VPC y una key pair en AWS.
 
 Estructura del Repositorio.
-├── ansible
-│   ├── playbook.yml  # Playbook para aprovisionar la AMI con Apache
-│
-├── packer
-│   ├── packer-template.json  # Template de Packer para crear la AMI
-│
-├── scripts
-│   ├── deploy.sh  # Script de automatización
-│
-├── terraform
-│   ├── main.tf  # Infraestructura como código para desplegar la AMI
-│
+![image](https://github.com/user-attachments/assets/da14980d-3522-4eac-9b9c-1ad1ddcf42ce)
 
 
 Pasos para Ejecutar el Proyecto
