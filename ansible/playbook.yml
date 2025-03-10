@@ -1,7 +1,14 @@
----
 - hosts: all
   become: yes
+  vars:
+    ansible_remote_tmp: /tmp/.ansible  # Usar un directorio temporal accesible
   tasks:
+    - name: Crear directorio temporal de Ansible
+      file:
+        path: "{{ ansible_remote_tmp }}"
+        state: directory
+        mode: '0777'  # Dar permisos completos temporalmente
+
     - name: Install Apache
       apt:
         name: apache2

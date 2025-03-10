@@ -1,9 +1,10 @@
-provider "aws" {
-  region = "us-east-1"
+variable "ami_id" {
+  description = "AMI ID generado por Packer"
+  type        = string
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-xxxxxxxx"  # Reemplaza con el ID de la AMI creada por Packer
+  ami           = var.ami_id
   instance_type = "t2.micro"
 
   tags = {
@@ -14,3 +15,4 @@ resource "aws_instance" "web" {
 output "public_ip" {
   value = aws_instance.web.public_ip
 }
+
