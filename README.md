@@ -32,8 +32,10 @@ Antes de ejecutar este proyecto, asegúrate de tener instalado:
 
 Nota: También se necesita una VPC y una key pair en AWS.
 
-Estructura del Repositorio.
-![image](https://github.com/user-attachments/assets/da14980d-3522-4eac-9b9c-1ad1ddcf42ce)
+ESTRUCTURA DEL PROYECTO 
+
+
+![image](https://github.com/user-attachments/assets/361256dd-dffd-419d-9757-162613729cbf)
 
 
 Pasos para Ejecutar el Proyecto
